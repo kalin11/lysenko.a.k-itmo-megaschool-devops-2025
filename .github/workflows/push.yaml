@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - users: helm-check
+      - uses: helm-check
         uses: igabaydulin/helm-check-action@0.1.4
         env:
           CHART_LOCATION: ./olymp-chart
