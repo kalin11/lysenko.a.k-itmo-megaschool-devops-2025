@@ -9,4 +9,4 @@ jobs:
         uses: igabaydulin/helm-check-action@0.1.4
         env:
           CHART_LOCATION: ./olymp-chart
-          CHART_VALUES: ./olymp-chart/values/test.yaml
+          CHART_VALUES: ./olymp-chart/values/auth-server-values.yaml
