@@ -1,0 +1,12 @@
+on: push
+name: check
+jobs:
+  helm-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - users: helm-check
+        uses: igabaydulin/helm-check-action@0.1.4
+        env:
+          CHART_LOCATION: ./olymp-chart
+          CHART_VALUES: ./olymp-chart/values/test.yaml

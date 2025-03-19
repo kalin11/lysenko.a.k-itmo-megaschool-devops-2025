@@ -1,0 +1,12 @@
+name: auth-server
+
+protocol: TCP
+port: 8000
+targetPort: 8000
+
+replicaCount: 1
+
+repository: ifilyaninitmo
+tag: auth-server-mega-itmo:main
+pullPolicy: IfNotPresent
+port: 8000

@@ -1,0 +1,12 @@
+name: time-server
+
+protocol: TCP
+port: 8001
+targetPort: 8001
+
+replicaCount: 1
+
+repository: ifilyaninitmo
+tag: time-server-mega-itmo:main
+pullPolicy: IfNotPresent
+port: 8001
